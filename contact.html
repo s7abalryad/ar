@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - مفروشات الريان للأرضيات</title>
+    <meta name="description" content="تواصل معنا في مفروشات الريان للأرضيات - نحن هنا لخدمتك">
+    
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-main fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo.png" alt="مفروشات الرياض للأرضيات" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">المنتجات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="tel:+966-54-112-3375" class="btn btn-primary me-2">
+                        <i class="fas fa-phone"></i> اتصل الآن
+                    </a>
+                    <a href="https://wa.me/message/HUQOAJFXX5KIN1" class="btn btn-success" target="_blank">
+                        <i class="fab fa-whatsapp"></i> واتساب
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero py-5 bg-light">
+        <div class="container">
+            <h1 class="text-center mb-4">اتصل بنا</h1>
+            <p class="text-center lead">نحن هنا لمساعدتك في اختيار أفضل المنتجات والخدمات</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info py-5" id="contactMessage">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">راسلنا</h3>
+                            <form id="contactForm" class="needs-validation" onsubmit="sendToWhatsApp(event)" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">الاسم</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                    <div class="invalid-feedback">الرجاء إدخال الاسم</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">الرجاء إدخال بريد إلكتروني صحيح</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">رقم الجوال</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                    <div class="invalid-feedback">الرجاء إدخال رقم جوال صحيح</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">الموضوع</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="">اختر الموضوع</option>
+                                        <option value="استفسار">استفسار</option>
+                                        <option value="طلب عرض سعر">طلب عرض سعر</option>
+                                        <option value="طلب خدمة">طلب خدمة</option>
+                                        <option value="شكوى">شكوى</option>
+                                    </select>
+                                    <div class="invalid-feedback">الرجاء اختيار الموضوع</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">الرسالة</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    <div class="invalid-feedback">الرجاء كتابة رسالتك</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-2"></i>إرسال عبر واتساب
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">معلومات الاتصال</h3>
+                            <div class="contact-details">
+                                <div class="d-flex mb-3">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h5>العنوان</h5>
+                                        <p>3132 Al Mazroa St
+                                        الرياض 12685
+                                        Saudi Arabia</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <i class="fas fa-phone fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h5>الهاتف</h5>
+                                        <p>+966-53-801-5071</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h5>البريد الإلكتروني</h5>
+                                        <p>shabalryad2@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <i class="fas fa-clock fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h5>ساعات العمل</h5>
+                                        <p>طوال ايام الاسبوع<br>في اي وقت يمكنك التواصل معنا </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">تابعنا</h3>
+                            <div class="social-links">
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-instagram"></i></a>
+                                <a href="https://wa.me/message/HUQOAJFXX5KIN1" class="btn btn-outline-primary"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="col-lg-6" style="display: flex; justify-self: center;">
+        <!-- خريطة Google Maps مدمجة بدون مفتاح API -->
+        <iframe
+        src="https://www.google.com/maps?q=24.59711,46.73076&hl=ar&z=16&output=embed"
+        width="100%"
+          height="350"
+          style="border:0; border-radius:16px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>سحاب الرياض</h5>
+                    <p>نقدم أفضل أنواع الموكيت والأرضيات في الرياض</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/products.html" class="text-light">منتجاتنا</a></li>
+                        <li><a href="/services.html" class="text-light">خدماتنا</a></li>
+                        <li><a href="/about.html" class="text-light">من نحن</a></li>
+                        <li><a href="/contact.html" class="text-light">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>تواصل معنا</h5>
+                    <p>
+                        <i class="fas fa-phone"></i> +966-53-801-5071 <br>
+                        <i class="fas fa-envelope"></i> shabalryad2@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Load Navbar and Footer
+        $(document).ready(function() {
+            $("#navbar-placeholder").load("includes/navbar.html");
+            $("#footer-placeholder").load("includes/footer.html");
+        });
+
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            if (!form.checkValidity()) {
+                event.stopPropagation();
+                form.classList.add('was-validated');
+                return;
+            }
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // تنسيق الرسالة
+            const whatsappMessage = `*رسالة جديدة من موقع سحاب الرياض*%0A%0A
+*الاسم:* ${name}%0A
+*البريد الإلكتروني:* ${email}%0A
+*رقم الجوال:* ${phone}%0A
+*الموضوع:* ${subject}%0A
+*الرسالة:* ${message}%0A%0A
+_نشكركم لاختياركم سحاب الرياض_`;
+            
+            // رقم الواتساب المستهدف (نفس الرقم الموجود في معلومات الاتصال)
+            const whatsappNumber = '966538015071';
+            
+            // إنشاء رابط الواتساب باستخدام رقم الهاتف
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+            
+            // فتح الواتساب في نافذة جديدة
+            window.open(whatsappUrl, '_blank');
+            
+            // إعادة تعيين النموذج
+            form.reset();
+            form.classList.remove('was-validated');
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
