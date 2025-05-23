@@ -4,4 +4,4 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemap location
-Sitemap: https://mafrushatalrayaan.com/sitemap.xml 
+Sitemap: https://s7abalryad.github.io/ar/sitemap.xml 
